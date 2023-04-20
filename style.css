@@ -47,19 +47,33 @@ body{
     height: 100px;
     position: relative;
     font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(to bottom, #03A696, #087e72);
+    background-image: linear-gradient(to bottom, #03A696, #10b4a4);
     color: #011F26;
-    border: 1px solid #AABF0B;
+    border: 1px solid #000000;
     border-left: 0px;
     box-shadow: 4px 4px 10px #012E40, -4px -4px 10px #012E40;
 }
 .navegacao h1{
     position: relative;
-    top: 10px;
+    top: 27px;
     justify-content: center;
     text-align: left;
     margin-left: 10px;
-    text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+    text-shadow: 1px 1px 4px black, 1px 1px 4px black;
+    display: inline;
+    color: #f3f3f3;
+}
+.navegacao img{
+    height: 40%;
+    float: right;
+    position: relative;
+    top: 27px;
+    right: 20px;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+.navegacao img:hover{
+    transform: scale(1.2);
 }
 /*Sobre*/
 h2, p{
@@ -70,10 +84,22 @@ h2, p{
     text-shadow: 1px 1px 4px black;
 }
 h2{
-    margin-top: 40px;
+    margin-top: 10%;
 }
 .about{
-    padding: 20px;
+    padding: 70px;
+}
+.foto{
+    margin: auto;
+    position: relative;
+    left: 54px;
+}
+.perfil{
+    width: 70%;
+    border-radius: 50px;
+    position: relative;
+    top: 90px;
+    border: 1px solid #03A696;
 }
 
 .curriculo{
@@ -98,6 +124,7 @@ h2{
 .projetos{
     display: flex;
     margin: auto;
+    margin-top: 10%;
 }
 .projetos img{
     border-radius: 10px;
@@ -121,6 +148,14 @@ h2{
     position: relative;
     top: 40px;
 }
+.projetos a{
+    text-decoration: none;
+    color: #03A696;
+}
+.projetos h3:hover{
+    transform: scale(1.2);
+    transition: 0.2seg;
+}
 .projetos h3{
     text-align: center;
     justify-content: end;
@@ -132,4 +167,12 @@ h2{
     .projetos{
         display: block;
     }
+}
+hr{
+    margin-top: 10%;
+}
+footer{
+    background-color: black;
+    margin-top: 5%;
+    border: 1px solid black;
 }
