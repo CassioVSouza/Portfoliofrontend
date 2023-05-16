@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+/*Body contato*/
+.container-contentcontact{
+    margin-top: 20%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4%;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+h2{
+    font-size: 12pt;
+    font-weight: 100;
+}
+.frase{
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 10%;
+    text-align: justify;
+}
+.destaque{
+    color: black;
+    font-weight: 900;
+}
+.endereco{
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4%;
+}
+.endereco p{ 
+    font-weight: 900;
+}
+.contatos{
+    display: flex;
+    margin-top: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin-left: 3%;
+}
+.tel{
+    margin-left: 3%;
+}
+/*Menu*/
+.menuindex{
+    position: absolute;
+    color: rgb(115, 115, 116);
+    right: 1%;
+    top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-align: right;
+}
+.menuindex a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+
+}
+.menuindex a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*PARA PC*/
+@media screen and (min-width: 325px){
+    .container-contentcontact{
+        display: flex;
+        margin-top: 10%;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 4%;
+    }
+    .frase{
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    .contatos{
+        display: flex;
+        margin-top: 7%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10pt;
+        margin-left: 4%;
+    }
+    .tel{
+        margin-left: 3%;
+    }
+}
