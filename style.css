@@ -133,6 +133,9 @@ body{
         position: relative;
         height: 250px;
     }
+    .img3, .img9, .img6{
+        display: block;
+    }
     .imgs-background{
         left: -0px;
         animation: animation-background1PC 20s infinite linear;
