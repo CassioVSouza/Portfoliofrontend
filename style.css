@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +38,9 @@ body{
 .img2v2{
     position: relative;
     right: -90px;
+}
+.img3, .img9, .img6{
+    display: none;
 }
 /*Second imgs background*/
 .container-imgsbackground2{
@@ -92,5 +97,99 @@ body{
     }
     to{
         left: -1634px;
+    }
+}
+.frase{
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    top: 45%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30pt;
+    text-shadow: 1px 1px 1px black;
+}
+.menuindex{
+    position: absolute;
+    color: aliceblue;
+    right: 1%;
+    top: 2%;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    font-size: 10pt;
+    text-align: right;
+}
+.menuindex a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.menuindex a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*PARA PC*/
+@media screen and (min-width: 325px){
+    .container-imgsbackground img{
+        position: relative;
+        height: 250px;
+    }
+    .imgs-background{
+        left: -0px;
+        animation: animation-background1PC 20s infinite linear;
+    }
+    .img3{
+        right: -120px;
+    }
+    .container-imgsbackground2 img{
+        position: relative;
+        height: 270px;
+    }
+    .imgs-background2{
+        left: -1610px;
+        animation: animation-background2PC 15s infinite linear reverse;
+    }
+    .img6{
+        right: -120px;
+    }
+    .container-imgsbackground3 img{
+        position: relative;
+        height: 270px;
+    }
+    .imgs-background3{
+        left: -1610px;
+        animation: animation-background3PC 20s infinite linear;
+    }
+    .img9{
+        right: -120px;
+    }
+    .frase{
+        margin-left: 2%;
+    }
+    .container-imgsbackground3{
+        height: 186px;
+    }
+}
+@keyframes animation-background1PC {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -1400px;
+    }
+}
+@keyframes animation-background2PC {
+    from{
+        left: -40px;
+    }
+    to{
+        left: -1610px;
+    }
+}
+@keyframes animation-background3PC {
+    from{
+        left: -40px;
+    }
+    to{
+        left: -1610px;
     }
 }
