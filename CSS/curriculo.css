@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
+    background: white;
+}
+body{
+    margin-bottom: 3%;
+}
+a{
+    color: #000000;
+}
+/*Menu*/
+.menuindex{
+    position: absolute;
+    color: rgb(115, 115, 116);
+    right: 1%;
+    top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-align: right;
+}
+.menuindex a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+
+}
+.menuindex a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Titulo*/
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+.destaque{
+    color: black;
+    font-weight: 900;
+}
+/*Corpo Curriculo*/
+.container-curri{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(163, 179, 160);
+    margin: 10% auto 0 auto;
+    padding-bottom: 2%;
+}
+.container-curri div{
+    margin-top: 4%;
+}
+.line1{
+    background-color: rgb(197, 202, 196);
+    text-align: center;
+    width: 90%;
+    margin: 2% auto 0 auto;
+    border-radius: 10px;
+}
+.line1 h1, h2{
+    font-size: 15pt;
+}
+.line2{
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+}
+.line2 h2{
+    margin-top: 3%;
+    text-align: center;
+}
+.line3{
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+}
+.line3 h2{
+    margin-top: 3%;
+    text-align: center;
+}
+@media screen  and (min-width: 768px) {
+    .container-col1{
+        display: flex;
+    }
+    .container-col1 div{
+        width: 50%;
+    }
+    .container-curri{
+        width: 50%;
+        margin: 2% auto 0 auto;
+    }
+    .separa1 div, .separa2 div{
+        width: 90%;
+    }
+    .line1{
+        margin: 0% auto 0 auto;
+    }
+}

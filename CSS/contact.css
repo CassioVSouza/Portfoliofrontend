@@ -14,7 +14,10 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-left: 4%;
 }
-
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, strong::selection, a::selection{
+    color: white;
+    background: green;
+}
 h1{
     font-family: 'Bebas Neue', sans-serif;
     margin-left: 4%;
@@ -55,6 +58,10 @@ h2{
 }
 .tel{
     margin-left: 3%;
+}
+p a{
+    text-decoration: none;
+    color: #000000;
 }
 /*Menu*/
 .menuindex{

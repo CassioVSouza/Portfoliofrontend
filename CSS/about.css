@@ -23,6 +23,10 @@ h1 a{
     font-weight: 900;
 }
 /*Corpo do About*/
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
+    color: white;
+    background: green;
+}
 .container-desc{
     font-family: 'Roboto', sans-serif;
     margin-top: 20%;
