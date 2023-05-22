@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+/*Titulo*/
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+.destaque{
+    color: black;
+    font-weight: 900;
+}
+/*Corpo do About*/
+.container-desc{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20%;
+}
+.container-desc div{
+    text-align: left;
+    margin-left: 4%;
+    font-weight: 900;
+    margin-top: 5%;
+}
+.para2 p{
+    text-align: right;
+    margin-right: 1%;
+}
+.miniInfos{
+    display: flex;
+}
+h2, h3{
+    font-size: 12pt;
+    font-weight: 100;
+}
+.miniInfos div{
+    width: 50%;
+}
+.miniInfos p{
+    text-align: left;
+    margin-top: 3%;
+}
+/*Menu*/
+.menuindex{
+    position: absolute;
+    color: rgb(115, 115, 116);
+    right: 1%;
+    top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-align: right;
+}
+.menuindex a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+
+}
+.menuindex a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px){
+    .container-desc{
+        font-family: 'Roboto', sans-serif;
+        margin-top: -5%;
+    }
+    .container-descs{
+        display: flex;
+    }
+    .container-descs{
+        position: relative;
+        left: -4%;
+        text-align: left;
+        margin-left: 0;
+    }
+    .para2 p{
+        position: relative;
+        left: 8%;
+        text-align: left;
+        margin-right: 1%;
+    }
+    .container-desc div{
+        text-align: left;
+        margin-left: 4%;
+    }
+}
