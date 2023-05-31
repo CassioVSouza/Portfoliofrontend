@@ -5,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100%;
-}
 /*Body contato*/
 .container-contentcontact{
     margin-top: 20%;
@@ -50,6 +47,9 @@ h2{
     font-weight: 900;
 }
 .contatos{
+    position: absolute;
+    bottom: 40px;
+    width: 95%;
     display: flex;
     margin-top: 40%;
     font-family: 'Roboto', sans-serif;
@@ -83,7 +83,7 @@ p a{
     cursor: pointer;
 }
 /*PARA PC*/
-@media screen and (min-width: 325px){
+@media screen and (min-width: 768px){
     .container-contentcontact{
         display: flex;
         margin-top: 10%;
