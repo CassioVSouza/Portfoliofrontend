@@ -31,36 +31,27 @@ section div{
 div a{
     text-decoration: underline;
 }
-.imgstop{
-    width: 95vw;
-    height: 50vw;
-    overflow: hidden;
-}
 .projeto1 img{
     width: 100%;
     display: block;
-    margin: auto;
-}
-.projeto1 img:hover{
-    filter: brightness(70%);
-    transform: scale(1.1);
+    margin: 5% auto 0 auto;
 }
 .projeto1 h2{
     font-size: 12pt;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    margin-top: 2%;
-    margin-left: 2%;
 }
 .projeto1 p{
     font-size: 10pt;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
-    margin-left: 2%;
     color: gray;
 }
 .projeto1{
     margin-top: 15%;
+}
+.descproj{
+    text-align: center;
 }
 h3{
     font-size: 12pt;
@@ -95,10 +86,13 @@ section a{
 @media screen and (min-width: 768px) {
     .projeto1{
         margin-top: 2%;
+        display: flex;
     }
-    .imgstop{
-        width: 95vw;
-        height: 50vw;
-        overflow: hidden;
+    .projeto1 div{
+        width: 50%;
+    }
+    .projeto1 img:hover{
+        filter: brightness(70%);
+        transform: scale(1.1);
     }
 }
