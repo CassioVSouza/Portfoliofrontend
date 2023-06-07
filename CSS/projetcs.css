@@ -93,6 +93,6 @@ section a{
     }
     .projeto1 img:hover{
         filter: brightness(70%);
-        transform: scale(1.1);
+        transition: 0.5s;
     }
 }
