@@ -1,199 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #000;
-    height: 100%;
+/*Header ----------------------------------------------------------------*/
+header{
+    background-color: #4C8FF3;
 }
-.container-imgsbackground{
-    position: relative;
-    overflow: hidden;
-}
-.imgs-background{
-    position: relative;
+.container-headerCell{
     display: flex;
-    left: -1504px;
-    top: -40px;
-    animation: animation-background 10s infinite linear;
 }
-.container-imgsbackground img{
-    position: relative;
-    height: 200px;
-}
-.img1{
-    position: relative;
-    left: -30px;
-}
-.img2{
-    position: relative;
-    right: -30px;
-}
-.img1v2{
-    position: relative;
-    right: -60px;
-}
-.img2v2{
-    position: relative;
-    right: -90px;
-}
-.img3, .img9, .img6{
+.LinksPC{
     display: none;
 }
-/*Second imgs background*/
-.container-imgsbackground2{
-    position: relative;
-    overflow: hidden;
+.LinksCell img{
+    width: 30px;
 }
-.imgs-background2{
-    position: relative;
-    display: flex;
-    left: -1794px;
-    top: -40px;
-    animation: animation-background2 12s infinite reverse linear;
-}
-.container-imgsbackground2 img{
-    position: relative;
-    height: 220px;
-}
-/*Third imgs background*/
-.container-imgsbackground3{
-    position: relative;
-    overflow: hidden;
-    height: 140px;
-}
-.imgs-background3{
-    position: relative;
-    display: flex;
-    left: -1634px;
-    top: -40px;
-    animation: animation-background3 10s infinite linear;
-}
-.container-imgsbackground3 img{
-    position: relative;
-    height: 220px;
-}
-@keyframes animation-background {
-    from{
-        left: -350px;
-    }
-    to{
-        left: -1502px;
-    }
-}
-@keyframes animation-background2 {
-    from{
-        left: -442px;
-    }
-    to{
-        left: -1794px;
-    }
-}
-@keyframes animation-background3 {
-    from{
-        left: -404px;
-    }
-    to{
-        left: -1634px;
-    }
-}
-.frase{
+.LinksCell{
     position: absolute;
-    z-index: 1;
-    color: aliceblue;
-    top: 53%;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 30pt;
-    text-shadow: 1px 1px 1px black;
-}
-.menuindex{
-    position: absolute;
-    color: aliceblue;
-    right: 1%;
-    top: 2%;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 1px black;
-    font-size: 10pt;
     text-align: right;
+    width: 40%;
+    margin-top: 1%;
+    right: 2px;
 }
-.menuindex a{
-    text-decoration: none;
-    color: aliceblue;
+.Foto img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-radius: 70px;
+    border: 2px white solid;
+}
+.Foto{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 9pt;
+}
+.DesenvolvimentoWeb{
+    margin-top: 2%;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 10pt;
+}
+/*Apresentação ----------------------------------------------------------------*/
+.container-apresentacao{
+    background-color: #4C8FF3;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+}
+.Sobre, .Sobre p{
+    padding-top: 10%;
+    text-align: justify;
+    margin: 0 2% 0 2%;
+}
+.Exp, .Exp p{
+    padding-top: 10%;
+    text-align: justify;
+    margin: 0 2% 0 2%;
+    padding-bottom: 10%;
+}
+/*Imagens das linguagens ----------------------------------------------------------------*/
+.LinguagensAbsolute{
+    position: absolute;
+    display: flex;
+}
+.divcomasimagens{
+    width: 20%;
+    text-align: center;
+}
+.container-imgslinguagens img{
+    width: 60%;
+}
+.JS img{
+    width: 50%;
+    margin-top: 4%;
+}
+.GIT img{
+    width: 55%;
+    margin-top: 4%;
+}
+.FIGMA img{
+    width: 88%;
+}
+.ParteAzul, .ParteBranca{
+    height: 25px;
+}
+.ParteAzul{
+    background-color: #4C8FF3;
+}
+/*O que eu faço ? ------------------------------------------------------*/
+.container-oquefaco{
+    color: #4C8FF3;
+    font-family: 'Fredoka', sans-serif;
+    padding-bottom: 10%;
+}
+.container-oquefaco h1{
+    text-align: center;
+    padding-top: 10%;
+}
+.container-oquefaco h2{
+    font-size: 10pt;
+    font-weight: 800;
+    padding: 5% 0 5% 0;
+    margin-left: 2%;
+}
+.container-oquefaco p{
+    padding: 2% 0 2% 0;
+    margin: 0 2% 0 2%;
+    text-align: justify;
+}
+/*O que eu já fiz ? ---------------------------------------------------*/
+.container-oquejafiz{
+    background-color: #4C8FF3;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+}
+.container-oquejafiz a:hover{
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+.container-oquejafiz h1{
+    padding: 10% 0 10% 0;
+    text-align: center;
+}
+.container-oquejafiz h2{
+    padding: 0 0 10% 0;
+    text-align: center;
+    font-size: 12pt;
+}
+.container-oquejafiz p{
+    padding: 0 0 10% 0;
+    text-align: justify;
+    margin: 0 2% 0 2%;
+}
+.container-oquejafiz img{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.zonsconstPC{
+    display: none;
+}
+/*Footer ----------------------------------------------------------------*/
+footer{
+    padding-top: 2%;
+    color: #4C8FF3;
+    margin-left: 2%;
+    font-family: 'Fredoka', sans-serif;
+}
+footer a{
+    color: #4C8FF3;
+}
+.Direitos{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 10pt;
+}
 
-}
-.menuindex a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-/*PARA PC*/
-@media screen and (min-width: 325px){
-    .container-imgsbackground img{
-        position: relative;
-        height: 250px;
+/*============================================= VERSÃO PARA PC ==============================*/
+
+@media screen and (min-width: 768px) {
+    .LinksCell{
+        display: none;
     }
-    .img3, .img9, .img6{
+    .zonsconstCell{
+        display: none;
+    }
+    .zonsconstPC{
+        display: flex;
+        padding-bottom: 5%;
+    }
+    .LinksPC{
         display: block;
+        position: absolute;
+        right: 2px;
+        top: 2%;
     }
-    .imgs-background{
-        left: -0px;
-        animation: animation-background1PC 20s infinite linear;
+    .container-headerPC{
+        display: flex;
     }
-    .img3{
-        right: -120px;
+    .Foto img{
+        width: 30%;
+        border-radius: 200px;
     }
-    .container-imgsbackground2 img{
-        position: relative;
-        height: 270px;
+    .Foto{
+        width: 45%;
+        margin: auto;
+        margin-top: 2%;
     }
-    .imgs-background2{
-        left: -1610px;
-        animation: animation-background2PC 15s infinite linear reverse;
+    .DesenvolvimentoWeb{
+        position: absolute;
+        left: 2px;
+        top: 0;
+        font-size: 17pt;
     }
-    .img6{
-        right: -120px;
+    .container-apresentacao{
+        display: flex;
     }
-    .container-imgsbackground3 img{
-        position: relative;
-        height: 400px;
+    .container-apresentacao div{
+        width: 50%;
     }
-    .imgs-background3{
-        left: -1610px;
-        animation: animation-background3PC 20s infinite linear;
-    }
-    .img9{
-        right: -120px;
-    }
-    .frase{
+    .container-apresentacao h1{
         margin-left: 2%;
     }
-    .container-imgsbackground3{
-        height: 106px;
+    .Sobre, .Sobre p{
+        padding-top: 5%;
+        text-align: justify;
+        margin: 0 2% 0 2%;
     }
-}
-@keyframes animation-background1PC {
-    from{
-        left: 0px;
+    .Exp, .Exp p{
+        padding-top: 5%;
+        text-align: justify;
+        margin: 0 2% 0 2%;
+        padding-bottom: 5%;
     }
-    to{
-        left: -1400px;
+    .LinguagensAbsolute{
+        width: 100%;
+        left: 25%;
     }
-}
-@keyframes animation-background2PC {
-    from{
-        left: -40px;
+    .LinguagensAbsolute img{
+        width: 20%;
     }
-    to{
-        left: -1610px;
+    .JS img{
+        margin-top: 0;
     }
-}
-@keyframes animation-background3PC {
-    from{
-        left: -40px;
+    .GIT img{
+        margin-top: 0;
     }
-    to{
-        left: -1610px;
+    .FIGMA img{
+        width: 30%;
+    }
+    .divcomasimagens{
+        margin: 0 -5% 0 -5%;
+    }
+    .separarservicos{
+        display: flex;
+        width: 100%;
+        padding-top: 5%;
+        margin-left: 1%;
+    }
+    .separarservicos div{
+        width: 30%;
+        margin: auto;
+    }
+    .container-oquejafiz h1{
+        padding: 5% 0 5% 0;
+        text-align: center;
+    }
+    .container-oquejafiz h2{
+        padding: 0 0 5% 0;
+    }
+    .container-oquejafiz p{
+        padding: 0 0 5% 0;
+        width: 100%;
+    }
+    .container-oquejafiz img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .dividirprojetos{
+        display: flex;
+        padding-top: 3%;
+    }
+    .dividirprojetos p{
+        margin: auto;
+        width: 60%;
+    }
+    .dividirprojetos div{
+        width: 50%;
+    }
+    .dividirprojetos h2{
+        text-align: center;
     }
 }
