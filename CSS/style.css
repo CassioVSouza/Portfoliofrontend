@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
 /*Header ----------------------------------------------------------------*/
 header{
     background-color: #4C8FF3;
@@ -49,6 +52,7 @@ header{
 /*Apresentação ----------------------------------------------------------------*/
 .container-apresentacao{
     background-color: #4C8FF3;
+    padding-bottom: 3%;
     color: white;
     font-family: 'Fredoka', sans-serif;
 }
@@ -64,34 +68,18 @@ header{
     padding-bottom: 10%;
 }
 /*Imagens das linguagens ----------------------------------------------------------------*/
-.LinguagensAbsolute{
-    position: absolute;
+.container-imgslinguagens{
     display: flex;
-    width: 100%;
-}
-.divcomasimagens{
-    width: 20%;
+    justify-content: space-around;
+    position: relative;
+    top: -25px;
     text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #4C8FF3;
+    font-size: 10pt;
 }
 .container-imgslinguagens img{
-    width: 50px;
-}
-.JS img{
-    width: 45px;
-    margin-top: 4%;
-}
-.GIT img{
-    width: 45px;
-    margin-top: 4%;
-}
-.FIGMA img{
-    width: 70px;
-}
-.ParteAzul, .ParteBranca{
-    height: 25px;
-}
-.ParteAzul{
-    background-color: #4C8FF3;
+    width: 40px;
 }
 /*O que eu faço ? ------------------------------------------------------*/
 .container-oquefaco{
@@ -178,7 +166,7 @@ footer a{
     .LinksPC{
         display: block;
         position: absolute;
-        right: 2px;
+        right: 30px;
         top: 2%;
     }
     .container-headerPC{
@@ -195,7 +183,7 @@ footer a{
     }
     .DesenvolvimentoWeb{
         position: absolute;
-        left: 2px;
+        left: 30px;
         top: 0;
         font-size: 17pt;
     }
@@ -219,28 +207,15 @@ footer a{
         margin: 0 2% 0 2%;
         padding-bottom: 5%;
     }
-    .LinguagensAbsolute{
-        width: 100%;
-        left: 25%;
-    }
-    .LinguagensAbsolute img{
-        width: 20%;
-    }
-    .JS img{
-        margin-top: 0;
-    }
-    .GIT img{
-        margin-top: 0;
-    }
-    .FIGMA img{
-        width: 30%;
+    .container-imgslinguagens{
+        font-size: 12pt;
     }
     .divcomasimagens{
         margin: 0 -5% 0 -5%;
     }
     .separarservicos{
         display: flex;
-        width: 100%;
+        width: 97%;
         padding-top: 5%;
         margin-left: 1%;
     }
